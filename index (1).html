@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ReedFilm</title>
+	<style>
+		body {
+			background-color: #1a1a1a;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 120px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 960px;
+			user-select: none;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 110px;
+			user-select: none;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 29px;
+			user-select: none;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+
+		.button {
+		  user-zoom: none;
+		  user-select: none;
+			background-color: #ff007f;
+			border: none;
+			border-radius: 9px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 80px;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: all 0.2s ease;
+			width: 420px;
+			display: block;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.button:hover {
+		  user-zoom: none;
+			background-color: #ff3d8c;
+			color: #1a1a1a;
+		}
+
+		.button::before {
+		  user-zoom: none;
+			content: '';
+			user-select: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #0FFF00;
+			opacity: 0;
+			transform: scaleX(2);
+			transform-origin: left;
+			transition: all 0.4s ease-in-out;
+		}
+
+		.button:hover::before {
+		  user-zoom: none;
+		  user-select: none;
+			opacity: 1;
+			transform: scaleX(0);
+		}
+
+		.gradient {
+			background: linear-gradient(135deg, #ff007f, #FFF000);
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+		}
+
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+		.apk-download {
+			background-color: #fff;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+			color: #1a1a1a;
+			cursor: pointer;
+			font-size: 24px;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: background-color 0.2s ease;
+			width: 200px;
+			display: block;
+			margin: 40px auto 0;
+		}
+
+		.apk-download:hover {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>ReedFilm</h1>
+		<p>Application gratuite qui propose de grands choix de films totalement gratuitement et sans aucune pub !</p>
+		<a href="ReedFilm.apk" class="button gradient">Installer</a>
+		<p>Version : 1.0</p>
+		<p>Developpeur : lpr0s</p>
+	</div>
+	
+</body>
+</html>
