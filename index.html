@@ -131,11 +131,55 @@
 		<p>Version : 1.0</p>
 		<p>Developpeur : lpr0s</p>
 	</div>
-<div align="center">
+	<center>
+<button class="appel" onclick="change()">Selectionner une page</button>
+</center>
+	
+	<center>
 <font size="3px">
 <a href="https://raw.githubusercontent.com/lpr0s1/main/main/LICENSE">lpr0s - 2023 - Copyright</a>
 </font>
-</div>
+</center>
+
+
+<style>
+  .appel{
+    height: 120px;
+    font-size: 70px;
+    width: 800px;
+    background: lightskyblue;
+    opacity: 80%;
+    border-radius: 12px;
+  }
+</style>
+
+
+<script>
+
+function change(){
+
+    prompt("Quel page voulez vous choisir ?\n- 1 - Telecharger Chronotox\n- 2 - Telecharger SwipyCode\n- 3 - Mon Compte TikTok");
+    
+    if(prompt = '1'){
+      window.location.href="https://chronotox.com"
+      
+    }else{
+      alert("Erreur..")
+    }
+    if(prompt = '2'){
+      window.location.href="https://swipycode.com"
+    }else{
+      alert("Erreur..")
+    }
+    if(prompt = '3'){
+      window.location.href="https://www.tiktok.com/@lpr0s?_t=8bYOMVKXrUM&_r=1"
+    }else{
+      alert("Erreur..")
+    }
+}
+
+
+</script>
 	
 </body>
 </html>
