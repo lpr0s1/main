@@ -1,18 +1,56 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>ReedFilm</title>
- <link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.json">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---Ne pas toucher a ce code merci.--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<style>
 		body {
 			background-color: #1a1a1a;
 			color: #fff;
+			user-select: none;
 			font-family: Arial, sans-serif;
 			font-size: 120px;
 			line-height: 1.5;
 			margin: 0;
 			padding: 0;
 		}
+		
 
 		.container {
 			max-width: 960px;
@@ -29,10 +67,15 @@
 		}
 
 		p {
-			font-size: 29px;
+			font-size: 30px;
 			user-select: none;
 			margin-bottom: 40px;
 			text-align: center;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom right, #b4d455, #ffd700);
+  background-clip: padding-box;
+  padding: 10px;
+
 		}
 
 		.button {
@@ -85,9 +128,9 @@
 		}
 
 		.gradient {
-			background: linear-gradient(135deg, #ff007f, #FFF000);
+			background: linear-gradient(131deg, #00FFF0, #0FFF00);
 			background-size: 400% 400%;
-			animation: gradient 15s ease infinite;
+			animation: gradient 10s ease infinite;
 		}
 
 		@keyframes gradient {
@@ -124,19 +167,26 @@
 		}
 	</style>
 </head>
+<div style="background-color: greenyellow">
+<div style="color: black">
+<p><i><b>lpr0s.fr</b></i></p>
+</div>
+</div>
 <body>
 	<div class="container">
 		<h1>ReedFilm</h1>
 		<p>Application gratuite qui propose de grands choix de films totalement gratuitement et sans aucune pub !</p>
 		<a href="ReedFilm.apk" class="button gradient">Installer</a>
-		<p>Version : 2.5</p>
-		<p>Developpeur : lpr0s</p>
+		<p><b>Version : 6.7</b></p>
+		<p><b>Developpeur : lpr0s</b></p>
 	</div>
-<center>
-<h1>Pas de date special pour le deploiement de ReedFilm...</h1>
-</center>
+	<div style="background-color: darkgrey">
+	  <p style="color:black"><b>[Actus] update: 17:17 - 1/05/23</b></p>
+	  <p>ReedFilm n'a pas encore de date de sortie specifique pour le moment, car l'application est encore en developpement.</p>
+	</div>
+	
 	<center>
-<button class="appel" onclick="change()">Selectionner une page</button>
+<button class="appel" onclick="cho();">Selectionner une page</button>
 </center>
 	
 	<center>
@@ -146,7 +196,9 @@
 </center>
 
 
+
 <style>
+
   .appel{
     height: 120px;
     font-size: 70px;
@@ -160,26 +212,14 @@
 
 <script>
 
-function change(){
-
-    prompt("Quel page voulez vous choisir ?\n- 1 - Telecharger Chronotox\n- 2 - Telecharger SwipyCode\n- 3 - Mon Compte TikTok");
+function cho() {
+  choix = prompt("[1] Mon Compte TikTok");
+  
+   if (choix === '1') {
+    window.location.href = "https://www.tiktok.com/@lpr0s?_t=8bYOMVKXrUM&_r=1";
+  }else if(choix === false){
     
-    if(prompt = '1'){
-      window.location.href="https://chronotox.com"
-      
-    }else{
-      alert("Erreur..")
-    }
-    if(prompt = '2'){
-      window.location.href="https://swipycode.com"
-    }else{
-      alert("Erreur..")
-    }
-    if(prompt = '3'){
-      window.location.href="https://www.tiktok.com/@lpr0s?_t=8bYOMVKXrUM&_r=1"
-    }else{
-      alert("Erreur..")
-    }
+  }
 }
 
 </script>
